@@ -21,7 +21,7 @@ A tal proposito con questo breve report si è voluto indagare sulla situazione d
 
 ### INIZIALIZZAZIONE DATI 
 
-```{r,include=FALSE,fig.align ="center"}
+```{r,include=FALSE}
 library(ggplot2)
 theme_set(theme_classic()+
             theme(axis.line = element_line(colour = "white")))
