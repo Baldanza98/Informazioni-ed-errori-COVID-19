@@ -1,5 +1,5 @@
 ---
-title: "Errori di lettura sul Coronavirus"
+title: "Alcuni errori di lettura sul Coronavirus"
 author: "Matteo Baldanza"
 output: 
   github_document:
