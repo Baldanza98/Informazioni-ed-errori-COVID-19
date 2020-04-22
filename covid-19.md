@@ -139,7 +139,7 @@ ggplot(dat_csv)+
   theme(axis.text.x = element_text(angle=45,hjust=1))
 ```
 
-![](covid-19_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+<img src="covid-19_files/figure-gfm/unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
 
 Ieri per la prima volta è stata raggiunto un numero negativo di nuovi
 casi. Questo risultato ci indica che il numero dei positivi e dimessi è
@@ -174,7 +174,7 @@ ggplot(dat_csv)+
     ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
     ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
-![](covid-19_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+<img src="covid-19_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
 Queste due curve rappresentano le serie storiche dei positivi/ricoveri.
 La linea arancione tratteggiata indica lo 0 . Le curve in nero sono
@@ -198,7 +198,7 @@ ggplot(dat_csv)+
   labs(caption = "Matteo Baldanza")
 ```
 
-![](covid-19_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+<img src="covid-19_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
 Quello che però non viene detto è che questi dati,che sono quelli
 comunicati quotidianamente,non rappresentano il vero numero di nuovi
@@ -308,7 +308,7 @@ theme(legend.justification=c(1,0), legend.position=c(1,0.5))+
 seir
 ```
 
-![](covid-19_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+<img src="covid-19_files/figure-gfm/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
 Quello che possiamo concludere è :
 

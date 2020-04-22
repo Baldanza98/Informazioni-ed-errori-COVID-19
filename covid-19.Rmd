@@ -3,7 +3,7 @@ title: "Alcuni errori di lettura sul Coronavirus"
 author: "Matteo Baldanza"
 output: 
   github_document:
-    fig_width: 5
+    fig_width: 6
     fig_height: 5
 ---
 **Questo articolo nasce al solo scopo informativo**
@@ -21,7 +21,7 @@ A tal proposito con questo breve report si è voluto indagare sulla situazione d
 
 ### INIZIALIZZAZIONE DATI 
 
-```{r,include=FALSE}
+```{r,include=FALSE,fig.align ="center"}
 library(ggplot2)
 theme_set(theme_classic()+
             theme(axis.line = element_line(colour = "white")))
@@ -72,7 +72,7 @@ dat_csv$totale_ospedalizzati=diff(dat_csv$totale_ospedalizzati)
 Per prima cosa si descrive la situazione tramite visualizzazione dei dati.
 Oggi all'interno della regione Lombardia la curva dei contagi è la seguente:
 
-```{r,warning=F}
+```{r,warning=F,fig.align ="center"}
 ggplot(dat_csv)+
   geom_line(size=1,col="tan1",aes(y=totale_positivi,x=data))+
   labs(title = "Lombardia",subtitle = "Confronto",caption = "Matteo Baldanza")+
@@ -88,7 +88,7 @@ I dati forniti dalla protezione civile non includono i ricoveri giornalieri ma s
 
 Il risultato è il seguente :
 
-```{r,warning=F}
+```{r,warning=F,fig.align ="center"}
 ggplot(dat_csv)+
   geom_line(size=1,aes(y=nuovi_positivi,x=data,colour="Positivi giornalieri"))+
   geom_smooth(aes(y=nuovi_positivi,x=data),col="black",se = F)+
@@ -111,7 +111,7 @@ Queste due curve rappresentano le serie storiche dei positivi/ricoveri. La linea
 Come ultimo commento si analizzano il numero dei tampo effettuati giornalmente.
 Negli ultimi giorni si dice che ultimamente i tamponi effettuati sono in continuo aumento ed effettivamente è vero :
 
-```{r,warning=F}
+```{r,warning=F,fig.align ="center"}
 dat_csv$tamponi=diff(dat_csv$tamponi)
 ggplot(dat_csv)+
   geom_bar(stat="identity",aes(y=tamponi,x=data,col=tamponi),inherit.aes = F)+
@@ -152,7 +152,7 @@ Ove beta rappresenta la probabilità di un individuo di infettarne un altro.
 
 A questo punto si può stimare il modello che risulta :
 
-```{r,warning=FALSE}
+```{r,warning=FALSE,fig.align ="center"}
 seir_model = function (current_timepoint, state_values, parameters)
 {
   S = state_values [1]        # susceptibles
