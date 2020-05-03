@@ -312,11 +312,9 @@ seir
 
 Quello che possiamo concludere è :
 
-1.  Il picco di infetti si raggiunge circa al 130/140 giorno, il che
+Il picco di infetti si raggiunge circa al 130/140 giorno, il che
     vuol dire che il virus stando al modello(non esprime verità
     assoluta\!) sia arrivato nel territorio lombardo nel periodo di
     dicembre/gennaio
 
-2.  Le persone infettate se non fossero state prese precauzioni come la
-    quarantena sarebbero state circa il 25% della popolazione
-    lombarda(si stima che ora gli infetti siano il 10%)
+
